@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown timer</title>
+    <style>
+        
+    body {
+    font-family: Arial, sans-serif;
+    background-image :url(./pic2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    }
+
+    .container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    }
+
+ .countdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+    .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+    .timer span {
+    font-size: 48px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    }
+
+    .labels {
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+    margin-top: 20px;
+    }
+
+    .labels span {
+    font-size: 14px;
+    color: #666;
+    }
+ 
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="countdown">
+            <div class="timer">
+                <span id="days">00</span>
+                <span id="hours">00</span>
+                <span id="minutes">00</span>
+                <span id="seconds">00</span>
+            </div>
+            <div class="labels">
+                <span>Days</span>
+                <span>Hours</span>
+                <span>Minutes</span>
+                <span>Seconds</span>
+            </div>
+        </div>
+    </div>
+ 
+    </div>
+
+<script src="script.js"></script>    
+</body>
+</html>
